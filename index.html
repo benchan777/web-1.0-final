@@ -38,6 +38,25 @@
                 </label>
 
                 <label>
+                    Font Weight
+                    <select id="font-weight" name="font-weight">
+                        <option value="bold">Bold</option>
+                        <option value="bolder">Bolder</option>
+                        <option value="normal">Normal</option>
+                        <option value="lighter">Lighter</option>
+                    </select>
+                </label>
+
+                <label>
+                    Font Style
+                    <select id="font-style" name="font-style">
+                        <option value="normal">Normal</option>
+                        <option value="italic">Italic</option>
+                        <option value="oblique">Oblique</option>
+                    </select>
+                </label>
+
+                <label>
                     Font Color
                     <input type="color" id="input-color" value="#000000">
                 </label>
@@ -72,6 +91,8 @@
                 <pre><code>.headline {
                 font-size: <span id="show-size">16</span>px;
                 font-family: <span id="show-font">Times</span>;
+                font-weight: <span id="show-weight">Bold</span>;
+                font-style: <span id="show-style">Normal</span>;
                 color: <span id="show-color">#000</span>;
                 background-color: <span id="show-bg-color">#fff</span>;
             }</code></pre>
