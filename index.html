@@ -8,71 +8,78 @@
 
 <body>
     <main>
-        <section id="student-info">
-            <header>
-                <h1>Ben Chan</h1>
-            </header>
+        <div id="column-one">
+            <section id="student-info">
+                <header>
+                    <h1>Ben Chan</h1>
+                </header>
 
-            <p>My favorite color is yellow and I wear sneakers!</p>
-        </section>
+                <p>My favorite color is yellow and I wear sneakers!</p>
+            </section>
 
-        <section id="data-input">
-            <header>
-                <h1>Font Styler</h1>
-            </header>
+            <section id="data-input">
+                <header>
+                    <h1>Font Styler</h1>
+                </header>
 
-            <label>
-                Font Size
-                <input type="number" id="input-size">
-            </label>
+                <label>
+                    Font Size
+                    <input type="number" id="input-size">
+                </label>
 
-            <label>
-                Font Family
-                <select id="select-font" name="select-font">
-                    <option value="helvetic">Helvetic</option>
-                    <option value="arial">Arial</option>
-                    <option value="times new roman">Times New Roman</option>
-                    <option value="georgia">Georgia</option>
-                </select>
-            </label>
+                <label>
+                    Font Family
+                    <select id="select-font" name="select-font">
+                        <option value="helvetic">Helvetic</option>
+                        <option value="arial">Arial</option>
+                        <option value="times new roman">Times New Roman</option>
+                        <option value="georgia">Georgia</option>
+                    </select>
+                </label>
 
-            <label>
-                Font Color
-                <input type="color" id="input-color" value="#000">
-            </label>
+                <label>
+                    Font Color
+                    <input type="color" id="input-color" value="#000000">
+                </label>
 
-            <label>
-                Background Color
-                <input type="color" id="input-bg-color" value="#fff">
-            </label>
+                <label>
+                    Background Color
+                    <!-- I changed the value to #ffffff because #fff was throwing out an error and
+                    the background color was default to black every time I refreshed the page
+                    making the default text color unreadable -->
+                    <input type="color" id="input-bg-color" value="#ffffff">
+                </label>
 
-            <label>
-                Enter Text
-                <textarea id="enter-text">Sample Text</textarea>
-            </label>
-        </section>
+                <label>
+                    Enter Text
+                    <textarea id="enter-text">Sample Text</textarea>
+                </label>
+            </section>
+        </div>
 
-        <section id="headline-display">
-            <header>
-                <h1 id="display">Sample Text</h1>
-            </header>
-        </section>
+        <div id="column-two">
+            <section id="headline-display">
+                <header>
+                    <h1 id="display">Sample Text</h1>
+                </header>
+            </section>
 
-        <section id="data-output">
-            <header>
-                <h1>Font Settings</h1>
-            </header>
+            <section id="data-output">
+                <header>
+                    <h1>Font Settings</h1>
+                </header>
 
-            <pre><code>.headline {
-            font-size: <span id="show-size">16</span>px;
-            font-family: <span id="show-font">Times</span>;
-            color: <span id="show-color">#000</span>;
-            background-color: <span id="show-bg-color">#fff</span>;
-        }</code></pre>
-        </section>
+                <pre><code>.headline {
+                font-size: <span id="show-size">16</span>px;
+                font-family: <span id="show-font">Times</span>;
+                color: <span id="show-color">#000</span>;
+                background-color: <span id="show-bg-color">#fff</span>;
+            }</code></pre>
+            </section>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 
 </body>
 
