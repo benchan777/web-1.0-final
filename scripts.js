@@ -6,6 +6,8 @@ const displayBackgroundColor = document.querySelector('#show-bg-color')
 const displayText = document.querySelector('#display')
 const displayFontWeight = document.querySelector('#show-weight')
 const displayFontStyle = document.querySelector('#show-style')
+const displayLetterSpacing = document.querySelector('#show-letter-spacing')
+const displayPadding = document.querySelector('#show-padding')
 
 // inputs
 const fontSizeInput = document.querySelector('#input-size')
@@ -15,6 +17,8 @@ const backgroundColorInput = document.querySelector('#input-bg-color')
 const textInput = document.querySelector('#enter-text')
 const fontWeightInput = document.querySelector('#font-weight')
 const fontStyleInput = document.querySelector('#font-style')
+const letterSpacingInput = document.querySelector('#input-letter-spacing')
+const paddingInput = document.querySelector('#input-padding')
 
 // input event listeners
 fontSizeInput.addEventListener('input', handleInput)
@@ -24,6 +28,8 @@ backgroundColorInput.addEventListener('input', handleInput)
 textInput.addEventListener('input', handleInput)
 fontWeightInput.addEventListener('input', handleInput)
 fontStyleInput.addEventListener('input', handleInput)
+letterSpacingInput.addEventListener('input', handleInput)
+paddingInput.addEventListener('input', handleInput)
 
 // this function handles all the inputs in the font styler form
 function handleInput() {
@@ -35,6 +41,8 @@ function handleInput() {
     const text_input = textInput.value
     const font_weight = fontWeightInput.value
     const font_style = fontStyleInput.value
+    const letter_spacing = letterSpacingInput.value
+    const padding = paddingInput.value
 
     // changes and displays font size
     h1.style.fontSize = font_size + "px"
@@ -62,4 +70,12 @@ function handleInput() {
     // changes and displays font style
     h1.style.fontStyle = font_style
     displayFontStyle.innerHTML = font_style
+
+    // changes and displays letter spacing
+    h1.style.letterSpacing = letter_spacing + "px"
+    displayLetterSpacing.innerHTML = letter_spacing + "px"
+
+    // changes and displays padding
+    h1.style.padding = padding + "px"
+    displayPadding.innerHTML = padding + "px"
 }
