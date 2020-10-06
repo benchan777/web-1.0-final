@@ -8,7 +8,68 @@
 
 <body>
     <main>
+        <section id="student-info">
+            <header>
+                <h1>Ben Chan</h1>
+            </header>
 
+            <p>My favorite color is yellow and I wear sneakers!</p>
+        </section>
+
+        <section id="data-input">
+            <header>
+                <h1>Font Styler</h1>
+            </header>
+
+            <label>
+                Font Size
+                <input type="number" id="input-size">
+            </label>
+
+            <label>
+                Font Family
+                <select id="select-font" name="select-font">
+                    <option value="helvetic">Helvetic</option>
+                    <option value="arial">Arial</option>
+                    <option value="times new roman">Times New Roman</option>
+                    <option value="georgia">Georgia</option>
+                </select>
+            </label>
+
+            <label>
+                Font Color
+                <input type="color" id="input-color" value="#000000">
+            </label>
+
+            <label>
+                Background Color
+                <input type="color" id="input-bg-color" value="#ffffff">
+            </label>
+
+            <label>
+                Enter Text
+                <textarea id="enter-text">Sample Text</textarea>
+            </label>
+        </section>
+
+        <section id="headline-display">
+            <header>
+                <h1 id="display">Sample Text</h1>
+            </header>
+        </section>
+
+        <section id="data-output">
+            <header>
+                <h1>Font Settings</h1>
+            </header>
+
+            <pre><code>.headline {
+            font-size: <span id="show-size">16</span>px;
+            font-family: <span id="show-font">Times</span>;
+            color: <span id="show-color">#000</span>;
+            background-color: <span id="show-bg-color">#fff</span>;
+        }</code></pre>
+        </section>
     </main>
 
     <script src="script.js"></script>
