@@ -73,9 +73,9 @@ function handleInput() {
 
     // changes and displays letter spacing
     h1.style.letterSpacing = letter_spacing + "px"
-    displayLetterSpacing.innerHTML = letter_spacing + "px"
+    displayLetterSpacing.innerHTML = letter_spacing
 
     // changes and displays padding
     h1.style.padding = padding + "px"
-    displayPadding.innerHTML = padding + "px"
+    displayPadding.innerHTML = padding
 }
