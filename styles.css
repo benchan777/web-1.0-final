@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(22, 44, 58);
+}
+
+header {
+    color: rgb(217, 124, 80);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    color: rgb(219, 169, 136)
+}
+
+#column-one {
+    padding: 20px;
+}
+
+#column-two {
+    padding: 20px;
+}
+
+label {
+    padding: 10px 0 10px 0;
+}
+
+#data-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    border-style: solid;
+    border-color: rgb(217, 124, 80);
+    border-radius: 5px;
+}
+
+#headline-display {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(217, 124, 80);
+    border-radius: 5px;
+}
